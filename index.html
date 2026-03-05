@@ -19,7 +19,7 @@
             padding: 40px 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
@@ -53,6 +53,12 @@
             padding-bottom: 10px;
             border-bottom: 2px solid #f0f0f0;
         }
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
         .section p {
             margin-bottom: 15px;
             text-align: justify;
@@ -75,6 +81,42 @@
             color: #667eea;
             margin-bottom: 10px;
         }
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .pricing-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .pricing-table td {
+            padding: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .pricing-table tr:hover {
+            background: #f8f9ff;
+        }
+        .pricing-table .recommended {
+            background: #fff9e6;
+            border-left: 4px solid #ffa500;
+        }
+        .pricing-table .price {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.1em;
+        }
+        .pricing-table .savings {
+            color: #28a745;
+            font-weight: bold;
+        }
         .footer {
             background: #f5f5f5;
             padding: 20px;
@@ -92,13 +134,13 @@
         </div>
         <div class="content">
             <div class="section">
-                <p>Effective Date: March 4, 2026</p>
+                <p><strong>Effective Date:</strong> March 5, 2025</p>
                 <p>Welcome to AutoImg Pro! Please read these Terms of Service carefully before using the app. By downloading, installing, or using this app, you agree to be bound by these terms.</p>
             </div>
             
             <div class="section">
                 <h2>1. Acceptance of Terms</h2>
-                <p>By downloading, installing, or using AutoImg Pro ("the App"), you agree to comply with these Terms of Service. If you do not agree to these terms, do not use the App.</p>
+                <p>By downloading, installing, or using AutoImg Pro ("the App"), you agree to comply with these Terms of Service. If you do not agree with these terms, do not use the App.</p>
             </div>
             
             <div class="section">
@@ -114,22 +156,89 @@
             </div>
             
             <div class="section">
-                <h2>3. Subscriptions and Purchases</h2>
-                <div class="highlight-box">
-                    <h3>In-App Purchases</h3>
-                    <p>AutoImg Pro offers in-app purchases and subscription services. All purchases are processed through the Apple App Store and are subject to Apple's terms and conditions.</p>
-                </div>
-                <p>Important subscription information:</p>
-                <ul>
-                    <li>Subscriptions will automatically renew unless auto-renewal is turned off at least 24 hours before the end of the current period</li>
-                    <li>You can manage subscriptions and turn off auto-renewal through your Apple ID account settings</li>
-                    <li>No cancellation of the current subscription is allowed during the active subscription period</li>
-                    <li>If you purchase a subscription with a free trial, you will be charged at the time of purchase confirmation</li>
-                </ul>
+                <h2>3. Subscription Plans and Pricing</h2>
+                <p>AutoImg Pro offers multiple subscription plans to suit your needs. All subscriptions are processed through Apple App Store and are subject to Apple's terms and conditions.</p>
+                
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Plan</th>
+                            <th>Price</th>
+                            <th>Billing Cycle</th>
+                            <th>Features</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Weekly</strong></td>
+                            <td class="price">$1.49/week</td>
+                            <td>Weekly auto-renewal</td>
+                            <td>Unlimited photos, AI enhancement, batch processing, premium templates</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monthly</strong></td>
+                            <td class="price">$4.99/month</td>
+                            <td>Monthly auto-renewal</td>
+                            <td>Unlimited photos, AI enhancement, batch processing, premium templates</td>
+                        </tr>
+                        <tr class="recommended">
+                            <td><strong>Yearly ⭐</strong></td>
+                            <td class="price">$24.99/year</td>
+                            <td>Yearly auto-renewal</td>
+                            <td>Unlimited photos, AI enhancement, batch processing, premium templates<br><span class="savings">Save 58% compared to monthly</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lifetime</strong></td>
+                            <td class="price">$39.99 (one-time)</td>
+                            <td>No renewal required</td>
+                            <td>Permanent unlimited access, all features included, one-time payment</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Free Usage</h3>
+                <p>Free users can process up to 100 photos per month. To continue using the app beyond this limit, you must upgrade to a paid subscription.</p>
+                
+                <h3>Free Trial</h3>
+                <p>The yearly subscription offers a 7-day free trial. You can cancel anytime during the trial period without being charged. After the trial ends, the subscription will automatically renew at the yearly price unless cancelled.</p>
             </div>
             
             <div class="section">
-                <h2>4. User Content</h2>
+                <h2>4. Payment and Billing</h2>
+                <h3>Payment Methods</h3>
+                <p>All subscriptions are processed through Apple App Store. We support Apple Pay, credit cards, debit cards, and other payment methods supported by Apple.</p>
+                
+                <h3>Auto-Renewal</h3>
+                <p>Subscriptions will automatically renew unless auto-renewal is turned off at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours prior to the end of the current period.</p>
+                
+                <h3>Refund Policy</h3>
+                <p>Refund policy follows Apple App Store's refund policy. Users may request a refund through the App Store within a certain period after purchase. Refund processing is handled by Apple, and the app developer cannot directly process refunds. After a refund is issued, subscription services will immediately stop.</p>
+                
+                <h3>Price Changes</h3>
+                <p>If prices change, we will notify users at least 30 days in advance. You can cancel your subscription before the change takes effect. Existing subscribers will continue at their current price until the change takes effect.</p>
+            </div>
+            
+            <div class="section">
+                <h2>5. Subscription Management</h2>
+                <h3>How to Purchase</h3>
+                <p>Click the "Pro" button in the app and select the subscription plan that suits you best. Payment is securely processed through Apple App Store.</p>
+                
+                <h3>How to Cancel</h3>
+                <p>You can cancel your subscription at any time:</p>
+                <ul>
+                    <li><strong>iOS/iPadOS:</strong> Settings → Apple ID → Subscriptions → Select ID Photo Pro → Cancel Subscription</li>
+                    <li><strong>macOS:</strong> App Store → Account icon → Manage Subscriptions → Select ID Photo Pro → Cancel Subscription</li>
+                </ul>
+                
+                <h3>How to Change Plans</h3>
+                <p>You can switch to a different subscription plan at any time. The new plan will take effect after the current billing period ends.</p>
+                
+                <h3>How to Restore Purchase</h3>
+                <p>Click the "Restore Purchase" button on the Paywall page. The app will automatically verify your purchase history.</p>
+            </div>
+            
+            <div class="section">
+                <h2>6. User Content</h2>
                 <p>You retain ownership of all images and content you process using the App. We do not access, collect, or store your images without your consent.</p>
                 <p>You may not use the App to process or create:</p>
                 <ul>
@@ -141,39 +250,39 @@
             </div>
             
             <div class="section">
-                <h2>5. Intellectual Property</h2>
+                <h2>7. Intellectual Property</h2>
                 <p>AutoImg Pro and all related content, features, and designs are the property of AutoImg Pro Team and are protected by copyright, trademark, and other intellectual property laws.</p>
             </div>
             
             <div class="section">
-                <h2>6. Disclaimer of Warranties</h2>
+                <h2>8. Disclaimer of Warranties</h2>
                 <p>The App is provided "as is" and "as available" without any express or implied warranties. We do not warrant that the App will be error-free, secure, or uninterrupted.</p>
                 <p>To the maximum extent permitted by applicable law, we shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from the use or inability to use the App.</p>
             </div>
             
             <div class="section">
-                <h2>7. Modifications to Terms</h2>
+                <h2>9. Modifications to Terms</h2>
                 <p>We reserve the right to modify these terms at any time. Any changes will be posted on this page with the updated effective date. Your continued use of the App constitutes acceptance of the modified terms.</p>
             </div>
             
             <div class="section">
-                <h2>8. Termination</h2>
+                <h2>10. Termination</h2>
                 <p>If you violate these terms, we may terminate or suspend your access to the App at any time without prior notice. Upon termination, you must cease using the App and delete all copies.</p>
             </div>
             
             <div class="section">
-                <h2>9. Governing Law</h2>
+                <h2>11. Governing Law</h2>
                 <p>These terms are governed by the laws of the United States, without regard to conflict of law principles.</p>
             </div>
             
             <div class="section">
-                <h2>10. Contact Us</h2>
+                <h2>12. Contact Us</h2>
                 <p>If you have any questions about these Terms of Service, please contact us at:</p>
                 <p>📧 Email: <a href="mailto:iocompile67692@gmail.com">iocompile67692@gmail.com</a></p>
             </div>
         </div>
         <div class="footer">
-            <p>&copy; 2026 AutoImg Pro. All rights reserved.</p>
+            <p>&copy; 2025 AutoImg Pro. All rights reserved.</p>
         </div>
     </div>
 </body>
